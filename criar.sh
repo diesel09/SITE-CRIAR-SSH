@@ -8,7 +8,7 @@ echo "<h2>Usuario invalido !</h2>"
 exit
 fi
 
-limite=$(cat /etc/users.txt | wc -l)
+limite=$(cat /etc/ADMuser | wc -l)
 
 if [ "$limite" -gt "30" ]
 then
@@ -17,7 +17,7 @@ exit 0
 fi
 
 # Aqui voce coloca o seu IP:
-ip=Coloque_Aqui
+ip=192.210.214.102
 validade=$(date '+%C%y/%m/%d' -d " +2 days")
 validadebr=$(date '+%d/%m/%C%y' -d " +2 days")
 
